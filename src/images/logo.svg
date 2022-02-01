@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="139.1px" height="56.3px" viewBox="0 0 139.1 56.3" enable-background="new 0 0 139.1 56.3" xml:space="preserve">
+<g>
+	<path fill="current" d="M1.8,19.2H10c6.1,0,11,4.9,11,11s-4.9,11-11,11H1.8V19.2z M7.6,35.5H10c2.9,0,5.2-2.3,5.2-5.2
+		c0-2.8-2.3-5.2-5.2-5.2H7.6V35.5z"/>
+	<path fill="current" d="M24.9,19.2h5.8v22h-5.8C24.9,41.2,24.9,19.2,24.9,19.2z"/>
+	<path fill="current" d="M51.2,41.1L40.9,30.7v10.4h-5.8v-22h2.3l10.4,10.4V19.2h5.8v22h-2.4V41.1z"/>
+	<path fill="current" d="M58,19.2h13.6V24h-7.9v3.6h7v4.9h-7v4h7.9v4.7H58V19.2z"/>
+</g>
+<g>
+	<circle fill="#CD4124" cx="102.5" cy="28.1" r="23.7"/>
+	<g>
+		<path fill="#FFFFFF" d="M88.1,17.2h5.8v22h-5.8V17.2z"/>
+		<path fill="#FFFFFF" d="M114.5,39.1l-10.4-10.4v10.4h-5.8v-22h2.3L111,27.5V17.2h5.8v22h-2.3V39.1z"/>
+	</g>
+</g>
+</svg>
