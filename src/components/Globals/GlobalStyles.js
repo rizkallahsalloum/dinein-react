@@ -11,8 +11,109 @@ import BebasNeueBold from '../../fonts/bebasneuebold.woff';
 import { createGlobalStyle } from 'styled-components';
 import { setColor, setFont, media } from '../../utils/styles';
 
-const Globals = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+    html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100vh;
+  }
+  *:focus {
+  outline: 0;
+  outline: none;
+  }
+
+  ::selection {
+  background-color: ${setColor.brickColor} ;
+  color: white ;
+}
+  a {
+    color: ${setColor.brickColor} ;
+  }
+  a, button {
+    cursor: pointer;
+  }
+
+  a, input, textarea, button {
+    outline: none;
+    text-decoration: none;
+    font-family: inherit;
+  }
+  ul {
+  list-style: none;
+}
+
+
+body{
+  background-color: ${setColor.whiteColor};
+  background-color: #fff;
+  color: #0d0c0f;
+  color: ${setColor.blackColor};
+  font-family: ${setFont.primaryFont};
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+h1 { font-size:4rem; line-height: 1.2; font-family:${
+  setFont.titleFont
+}; text-transform:uppercase; margin:0 }
+h2 { font-size: 3rem;  margin:0 }
+h3 { font-size: 2.5rem; line-height: 1;  margin:0 }
+h4 { font-size: 2.3rem; line-height: 1.25; font-weight: bold;margin:0 }
+h5 { font-size: 2rem; font-weight: bold;margin:0  }
+h6 { font-size: 1.8rem; font-weight: bold; margin:0 }
+p {
+ line-height:1.5;
+ margin: 0 0 1.5rem; }
+
+ .new-line {
+  white-space: pre-line;
+}
+
+
+.shopping-cart{
+  max-height:55vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin:0 -1rem;
+  @media ${media.desktop}{
+    height:100%;
+    ${'' /* overflow: unset; */}
+  }
+  @media ${media.mobile}{
+    height:100%;
+    overflow: unset;
+  }
+  /* width */
+::-webkit-scrollbar {
+  width:0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 .1rem #535765;
+  border-radius: 5rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bdbcbf;
+  border-radius: 5rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #535765;
+}
 @font-face {
     @font-face {
     font-family: 'Poppins';
@@ -69,108 +170,9 @@ const Globals = createGlobalStyle`
     font-weight: 700;
     font-style: normal;
 }
-  *,
-  *::after,
-  *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-  }
-    html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    height: 100vh;
-  }
-  *:focus {
-  outline: 0;
-  outline: none;
-  }
-
-  ::selection {
-  background-color: ${setColor.brickColor} ;
-  color: white ;
-}
-  a {
-    color: ${setColor.brickColor} ;
-  }
-  a, button {
-    cursor: pointer;
-  }
-
-  a, input, textarea, button {
-    outline: none;
-    text-decoration: none;
-    font-family: inherit;
-  }
-  ul {
-  list-style: none;
-}
-
-
-body{
-  background-color: ${setColor.whiteColor};
-  color: ${setColor.blackColor};
-  font-family: ${setFont.primaryFont};
-  height: 100vh;
-  font-size: 1.6rem;
-  margin: 0;
-  padding: 0;
-}
-
-h1 { font-size:4rem; line-height: 1.2; font-family:${
-  setFont.titleFont
-}; text-transform:uppercase; margin:0 }
-h2 { font-size: 3rem;  margin:0 }
-h3 { font-size: 2.5rem; line-height: 1;  margin:0 }
-h4 { font-size: 2.3rem; line-height: 1.25; font-weight: bold;margin:0 }
-h5 { font-size: 2rem; font-weight: bold;margin:0  }
-h6 { font-size: 1.8rem; font-weight: bold; margin:0 }
-p {
- line-height:1.5;
- margin: 0 0 1.5rem; }
-
- .new-line {
-  white-space: pre-line;
-}
-
-}
-.shopping-cart{
-  max-height:55vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  margin:0 -1rem;
-  @media ${media.desktop}{
-    height:100%;
-    ${'' /* overflow: unset; */}
-  }
-  @media ${media.mobile}{
-    height:100%;
-    overflow: unset;
-  }
-  /* width */
-::-webkit-scrollbar {
-  width:0.5rem;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 .1rem #535765;
-  border-radius: 5rem;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #bdbcbf;
-  border-radius: 5rem;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #535765;
-}
 }
 
 
 `;
 
-export default Globals;
+export default GlobalStyle;

@@ -44,7 +44,6 @@ export const CarouselNavigation = styled.div`
   @media ${media.mobile} {
     right: 0;
   }
-  /* bottom: clamp(1vw, -5rem, -3vw); */
 `;
 
 export const LeftArrow = styled.a`

@@ -1,4 +1,5 @@
 import React from 'react';
+import './utils/styles.css';
 import { DataProvider } from './context';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 

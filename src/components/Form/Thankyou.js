@@ -26,7 +26,10 @@ export default class Thankyou extends React.Component {
           </FluidContainer>
           <CenterContainer value="center">
             <ThanksMessage>
-              <h5> Thank for your message has been sent</h5>
+              <h5>
+                Your message has been sent, we will reply to you as soon as we
+                finish eating! thank you
+              </h5>
 
               <LinkBtn to="/">Back to Homepage</LinkBtn>
             </ThanksMessage>

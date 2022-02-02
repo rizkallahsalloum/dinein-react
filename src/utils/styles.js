@@ -22,7 +22,7 @@ export const themeColor = theme('mode', {
 });
 
 export const setFont = {
-  primaryFont: " 'Poppins', sans-serif ",
+  primaryFont: " font-family: 'Poppins', sans-serif ",
   titleFont: 'Bebas Neue',
 };
 export const setFlex = ({ x = 'center', y = 'center' } = {}) => {

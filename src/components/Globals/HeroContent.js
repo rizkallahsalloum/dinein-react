@@ -29,7 +29,6 @@ const HeroContentWrapper = styled(HeroContent)`
   }
   h1 {
     font-size: clamp(7rem, 15rem, 12vw);
-    /* font-size: clamp(3rem, 1rem + 10vw, 7rem); */
     line-height: 0.9;
     font-family: ${setFont.titleFont};
     text-transform: uppercase;

@@ -39,8 +39,10 @@ class CardsDetails extends React.Component {
       slug: this.props.match.params.slug,
     };
   }
+
   componentDidMount() {
     this.context.getTotal();
+    document.title = 'Our Menu';
   }
 
   myRef = React.createRef();
@@ -52,7 +54,6 @@ class CardsDetails extends React.Component {
     }
     images[indexThumb].className = 'active';
   };
-  // Later check to use the key=item instead of index
 
   render() {
     let { indexThumb } = this.state;
