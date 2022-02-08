@@ -30,7 +30,7 @@ class Burgers extends React.Component {
           <FluidContainer>
             <HeaderImg img={burgerBG} size="auto">
               <CenterContainer>
-                <Header caption="Juicy!k" />
+                <Header caption="Juicy!" />
               </CenterContainer>
             </HeaderImg>
           </FluidContainer>

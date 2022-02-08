@@ -1,3 +1,30 @@
+# React Shopping Cart
+
+## Title: Dine In
+
+### Description:
+
+I've created this project for learning purposes.
+
+I tried to challenge myself by picking a design from [Dribble](https://dribbble.com/shots/14708858-Clothing-Store-Web-UI).
+After picking the design and Rebranding it for a restaurant, the rest of the pages I tried to follow and create similar design.
+
+React shopping cart with Context API and I mainly focused on Class component, used styled components for styling, and uses local storage.
+
+#### Credits:
+
+- Farzan Faruk [Design](https://dribbble.com/shots/14708858-Clothing-Store-Web-UI).
+
+- Photos used from [Pexels](https://www.pexels.com/).
+
+- Photos used from [Unsplash](https://unsplash.com/).
+
+- Photos used from [Freepngimg](https://freepngimg.com/).
+
+- Icons used from [Flaticon](https://www.flaticon.com/).
+
+- Fonts used from [Google Fonts](https://fonts.google.com/).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +95,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # dinein-react
