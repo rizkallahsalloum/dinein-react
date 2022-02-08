@@ -33,15 +33,14 @@ export const PrimaryLinkBtn = styled(NavLink)`
   background-color: ${setColor.brickColor};
   font-size: 1.6rem;
   font-weight: 700;
-  padding: 1rem 2rem;
+  width: 15em;
+  height: 4em;
+  transition: all ease-out 0.3s;
   @media ${media.mobile} {
     padding: 1rem;
     line-height: 2.8;
     font-size: 1.4rem;
   }
-  width: ${setEm(200)};
-  height: ${setEm(44)};
-  transition: all ease-out 0.3s;
   &:hover {
     background-color: ${setColor.darkgrayColor};
   }
@@ -99,6 +98,7 @@ export const NavLinkOutlined = styled(LinkBtn)`
   background: transparent;
   color: ${setColor.darkgrayColor};
   border: 1px solid ${setColor.darkgrayColor};
+  margin-bottom: 2rem;
   &:hover {
     color: ${setColor.whiteColor};
   }

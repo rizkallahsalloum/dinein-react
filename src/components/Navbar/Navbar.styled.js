@@ -1,6 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import BasketIcon from '../../images/shopping-basket.svg';
-// import themeColor from 'styled-theming';
+
 import styled from 'styled-components';
 import {
   setColor,
@@ -102,6 +101,8 @@ export const Cart = styled.button`
 
   svg {
     fill: ${themeColor};
+    width: 1.5625em;
+    height: 1.5625em;
   }
 `;
 export const CartAmount = styled.span`
@@ -132,8 +133,7 @@ export const CartModal = styled.div`
   background: ${setColor.whiteColor};
   opacity: ${(props) => (props.open ? '1' : '0')};
   pointer-events: ${(props) => (props.open ? 'auto' : 'none')};
-  /* max-height: ${(props) => (props.open ? '50vh' : '0')};
-  overflow: hidden; */
+
   padding: ${(props) => (props.open ? '1.5rem' : '0 1.5rem')};
   transition: all 0.3s;
   position: absolute;

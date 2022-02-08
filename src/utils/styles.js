@@ -31,6 +31,22 @@ export const setFlex = ({ x = 'center', y = 'center' } = {}) => {
   justify-content: ${x}`;
 };
 
+export const withContainer = (Component) => styled(Component)`
+  display: grid;
+  grid-column: ${(props) => props.value};
+`;
+
+export const CenterContainer = withContainer(({ className, children }) =>
+  React.cloneElement(children, { className })
+);
+
+export const FlexRow = styled.div`
+  ${setFlex({ y: 'center', x: 'space-between' })};
+`;
+export const setEm = (number = 16) => {
+  return `${number / 16}em`;
+};
+
 export const setContainer = ({ x = 'center-start', y = 'center-end' } = {}) => {
   return `
   display: grid;
@@ -58,15 +74,14 @@ export const setFluid = ({ x = 'full-start', y = 'full-end' } = {}) => {
   grid-column:${x} /  ${y}`;
 };
 
-export const setEm = (number = 16) => {
-  return `${number / 16}em`;
-};
-
 export const setBackground = ({
   img = '../images/menu-bg.jpg',
   color = 'rgba(0,0,0,0)',
+  size = 'cover',
 } = {}) => {
-  return `background:linear-gradient(${color},${color}), url(${img}) bottom / cover fixed no-repeat;`;
+  return `background:linear-gradient(${color},${color}), url(${img}) bottom / ${size} fixed no-repeat;
+
+  `;
 };
 const size = {
   wide: '100em', //1600px
@@ -84,7 +99,13 @@ export const media = {
   mobile: `(max-width: ${size.mobile})`,
   mobileS: `(max-width: ${size.mobileS})`,
 };
+export const FluidContainer = styled.div`
+  ${setFluid()};
+`;
 
+export const Container = styled.div`
+  ${setContainer()};
+`;
 export const GridLayout = styled.div`
   grid-column: full;
   display: grid;
@@ -107,25 +128,4 @@ export const GridLayout = styled.div`
       [center-end ] minmax(1rem, 1fr) [full-end];
   }
   z-index: auto;
-`;
-
-export const FluidContainer = styled.div`
-  ${setFluid()};
-`;
-
-export const Container = styled.div`
-  ${setContainer()};
-`;
-
-export const withContainer = (Component) => styled(Component)`
-  display: grid;
-  grid-column: ${(props) => props.value};
-`;
-
-export const CenterContainer = withContainer(({ className, children }) =>
-  React.cloneElement(children, { className })
-);
-
-export const FlexRow = styled.div`
-  ${setFlex({ y: 'center', x: 'space-between' })};
 `;

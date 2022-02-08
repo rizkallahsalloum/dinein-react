@@ -57,6 +57,7 @@ const HeroContentWrapper = styled(HeroContent)`
     font-family: ${setFont.primaryFont};
     font-weight: 600;
     font-size: 1.8rem;
+    margin: 1.8rem 4rem;
     color: ${setColor.darkgrayColor};
     @media ${media.mobile} {
       margin: 2rem 0 1rem 2rem;

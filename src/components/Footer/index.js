@@ -14,7 +14,9 @@ export default function Footer() {
 
       <FooterRight>
         <OurMenuFooter>
-          <img src={ClocheIcon} alt="Cloche" />
+          <span>
+            <img src={ClocheIcon} alt="Cloche" />
+          </span>
           <h6>our menu</h6>
         </OurMenuFooter>
         <FeaturedProducts />
@@ -65,10 +67,14 @@ const OurMenuFooter = styled.div`
     font-size: 3rem;
     text-indent: 1.2rem;
   }
-  img {
-    padding: 1rem;
+  span {
     border-radius: 50rem;
     background: ${setColor.darkgrayColor};
+    width: 3.5em;
+    height: 3.5em;
+    ${setFlex({ y: 'center', x: 'center' })};
+  }
+  img {
     width: 2em;
     height: 2em;
   }

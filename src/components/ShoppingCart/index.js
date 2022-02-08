@@ -16,6 +16,7 @@ import {
   ShoppingCartStyled,
   ReductionButton,
   IncreaseButton,
+  CardMainStyled,
   CardMain,
   CartFooter,
   ViewBagBtn,
@@ -54,7 +55,7 @@ export default class ShoppingCart extends React.Component {
                   <img src={item.images} alt={item.alt} />
                 </ShoppingCardImage>
 
-                <div>
+                <CardMainStyled>
                   <CardMain>
                     <CardTitle>{item.title}</CardTitle>
                     <CardType>{item.type}</CardType>
@@ -73,7 +74,7 @@ export default class ShoppingCart extends React.Component {
                       <img src={DeleteIcon} alt="Delete" />
                     </DeleteItem>
                   </AmountItem>
-                </div>
+                </CardMainStyled>
               </ShoppingCartStyled>
             ))}
           </div>

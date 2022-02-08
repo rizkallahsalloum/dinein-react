@@ -22,13 +22,16 @@ const GlobalStyle = createGlobalStyle`
     html {
     box-sizing: border-box;
     font-size: 62.5%;
-    height: 100vh;
+    /* min-height: 100vh; */
   }
   *:focus {
   outline: 0;
   outline: none;
   }
 
+  figure{
+    margin: 0;
+  }
   ::selection {
   background-color: ${setColor.brickColor} ;
   color: white ;
@@ -63,9 +66,7 @@ body{
   padding: 0;
 }
 
-h1 { font-size:4rem; line-height: 1.2; font-family:${
-  setFont.titleFont
-}; text-transform:uppercase; margin:0 }
+h1 { font-size:4rem; line-height: 1.2; font-family:${setFont.titleFont}; text-transform:uppercase; margin:0 }
 h2 { font-size: 3rem;  margin:0 }
 h3 { font-size: 2.5rem; line-height: 1;  margin:0 }
 h4 { font-size: 2.3rem; line-height: 1.25; font-weight: bold;margin:0 }
@@ -87,11 +88,11 @@ p {
   margin:0 -1rem;
   @media ${media.desktop}{
     height:100%;
-    ${'' /* overflow: unset; */}
+
   }
   @media ${media.mobile}{
     height:100%;
-    overflow: unset;
+    overflow: hidden;
   }
   /* width */
 ::-webkit-scrollbar {

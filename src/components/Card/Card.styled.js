@@ -9,7 +9,6 @@ export const CardsMenu = styled.section`
   grid-row-gap: 0rem;
   color: ${setColor.blackColor};
 
-  /* background: ${setColor.blackColor}; */
   a {
     color: ${setColor.blackColor};
   }
@@ -26,7 +25,7 @@ export const CardStyled = styled.div`
   line-height: 2;
   text-align: center;
   transition: 0.5s;
-  ${setFlex({ y: 'space-between', x: 'end' })};
+  ${setFlex({ y: 'space-between', x: 'space-around' })};
   flex-direction: column;
   &:hover {
     transform: scale(1.06);
@@ -37,14 +36,15 @@ export const CardStyled = styled.div`
   }
 `;
 export const CardImage = styled.figure`
+  height: 11em;
   img {
     width: 100%;
     height: auto;
-    max-width: 20rem;
+    max-width: 10em;
     filter: drop-shadow(1px 10px 10px #8d8d8da1);
   }
 `;
-export const CardTitle = styled.div`
+export const CardTitle = styled.h3`
   font-family: ${setFont.titleFont};
   font-size: 3.5rem;
   font-weight: 600;

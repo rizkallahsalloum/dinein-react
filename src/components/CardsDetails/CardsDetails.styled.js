@@ -22,12 +22,12 @@ export const CardsDetailsStyled = styled.div`
 export const ThumbGalleryStyled = styled.div`
   @media ${media.mobile} {
     flex-basis: 20em;
+    order: 1;
   }
 `;
 
 export const LargeImg = styled.div`
   max-width: 35em;
-  margin: 5rem;
   @media ${media.mobile} {
     margin: 0 5rem 3rem;
   }
@@ -46,15 +46,22 @@ export const ItemTitle = styled.div`
   @media ${media.mobile} {
     flex-direction: column;
     align-items: flex-start;
+    order: 3;
   }
 `;
 export const ItemIngredients = styled.p`
   color: ${setColor.grayColor};
-  font-weight: 500; ;
+  font-weight: 500;
+  @media ${media.mobile} {
+    order: 4;
+  }
 `;
 export const ItemDescription = styled.p`
   color: ${setColor.lightGrayColor};
-  font-weight: 300; ;
+  font-weight: 300;
+  @media ${media.mobile} {
+    order: 5;
+  }
 `;
 export const ItemName = styled.h3`
   padding-bottom: 0.8rem;
@@ -83,8 +90,8 @@ export const DetailsThumbImg = styled.div`
     margin-bottom: 1.5rem;
 
     @media ${media.mobile} {
-      max-width: 5rem;
-      height: 5rem;
+      min-width: 5rem;
+      /* max-height: 5rem; */
     }
   }
   .active {
@@ -105,8 +112,16 @@ export const ItemInfo = styled.div`
   }
 `;
 export const ItemGallery = styled.section``;
+export const ItemGalleryThumbStyled = styled.div`
+  @media ${media.mobile} {
+    order: 2;
+  }
+`;
 export const ItemInfoFooter = styled.div`
   ${setFlex({ y: 'flex-start', x: '' })};
+  @media ${media.mobile} {
+    order: 6;
+  }
 
   button {
     margin-right: 5rem;

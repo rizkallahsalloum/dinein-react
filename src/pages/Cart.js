@@ -36,6 +36,7 @@ const StyledCart = styled.section`
 const CartStyled = styled(ShoppingCartStyled)`
   ${setFlex({ y: 'center', x: 'space-between' })};
   align-items: stretch;
+
   .shopping-cart {
     height: 100%;
     min-height: 100vh;
@@ -59,6 +60,7 @@ const CartStyled = styled(ShoppingCartStyled)`
       display: none;
     }
     }
+
   }
 
   .shopping-cart-amount {

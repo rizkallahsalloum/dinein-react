@@ -10,6 +10,7 @@ import {
   ThumbGalleryStyled,
   LargeImg,
   DetailsThumbImg,
+  ItemGalleryThumbStyled,
   ItemTitle,
   ItemDescription,
   ItemIngredients,
@@ -91,16 +92,18 @@ class CardsDetails extends React.Component {
                     <ItemIngredients>{ingredients}</ItemIngredients>
 
                     <ItemDescription>{description}</ItemDescription>
-                    <DetailsThumbImg ref={this.myRef}>
-                      {thumb.map((img, index) => (
-                        <img
-                          src={img}
-                          alt=""
-                          key={index}
-                          onClick={() => this.handleThumb(index)}
-                        />
-                      ))}
-                    </DetailsThumbImg>
+                    <ItemGalleryThumbStyled>
+                      <DetailsThumbImg ref={this.myRef}>
+                        {thumb.map((img, index) => (
+                          <img
+                            src={img}
+                            alt=""
+                            key={index}
+                            onClick={() => this.handleThumb(index)}
+                          />
+                        ))}
+                      </DetailsThumbImg>
+                    </ItemGalleryThumbStyled>
                     <ItemInfoFooter>
                       <OutlinedBtn onClick={this.props.history.goBack}>
                         Back to Menu

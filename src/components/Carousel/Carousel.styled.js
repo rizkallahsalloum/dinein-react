@@ -68,7 +68,7 @@ export const CarouselDesc = styled.div`
   position: absolute;
   left: 0;
   top: 5rem;
-  height: ${setEm(150)};
+  min-height: ${setEm(150)};
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   background: linear-gradient(145deg, #535765, #403640);

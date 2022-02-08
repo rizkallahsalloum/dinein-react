@@ -12,6 +12,7 @@ import styled, { ThemeProvider } from 'styled-components';
 
 const MenuContent = styled.section`
   grid-column: center;
+  margin-bottom: 3rem;
 `;
 
 class Menu extends React.Component {
@@ -27,7 +28,7 @@ class Menu extends React.Component {
       <ThemeProvider theme={{ mode: 'light' }}>
         <GridLayout>
           <FluidContainer>
-            <HeaderImg img={menuBg}>
+            <HeaderImg img={menuBg} size="auto">
               <Header caption="Grill is Ready" />
             </HeaderImg>
           </FluidContainer>

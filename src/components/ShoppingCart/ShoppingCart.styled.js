@@ -10,6 +10,7 @@ export const ShoppingCartAmount = styled.div`
 `;
 export const ShoppingCartStyled = styled.div`
   ${setFlex({ y: 'start', x: 'space-between' })};
+
   align-items: start;
   flex: 1;
   flex-wrap: wrap;
@@ -19,6 +20,9 @@ export const ShoppingCartStyled = styled.div`
   border-bottom: 1px solid rgba(189, 188, 191, 0.2);
   padding: 2rem 1rem;
   z-index: 100;
+  figure {
+    height: unset;
+  }
   @media ${media.tablet} {
     ${setFlex({ y: 'start', x: 'start' })};
     flex-direction: row;
@@ -36,6 +40,15 @@ export const ShoppingCartStyled = styled.div`
     padding: 2rem 0;
   }
 `;
+export const CardMainStyled = styled.div`
+  ${setFlex({ y: 'center', x: 'flex-start' })};
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+  flex: 2 0;
+  width: -webkit-fill-available;
+`;
 export const CardMain = styled.div`
   ${setFlex({ y: 'start', x: 'space-between' })};
   flex-direction: column;
@@ -46,10 +59,9 @@ export const CardMain = styled.div`
     ${setFlex({ y: 'start', x: 'space-between' })};
     flex-wrap: wrap;
     position: relative;
-    left: 5rem;
-    padding: 0.5rem 2rem;
     flex-grow: 2;
     margin-bottom: 0rem;
+    line-height: 1.3;
   }
 `;
 export const CardTitle = styled.h5`
@@ -71,31 +83,32 @@ export const CardPrice = styled.div`
 
 export const ShoppingCardImage = styled(CardImage)`
   margin: 0 2rem 0 0;
+  background: rgba(189, 188, 191, 0.1);
+  border-radius: 3rem;
   img {
     padding: 2.5rem;
-    border-radius: 6px;
     position: relative;
-    background: rgba(189, 188, 191, 0.1);
-    border-radius: 3rem;
-    max-width: 6em;
+    min-width: 6em;
     object-fit: contain;
   }
   @media ${media.mobile} {
-    max-width: 5em;
+    max-width: 8em;
     padding: 0;
-    margin: 0;
-    position: relative;
-    left: 0;
-    flex-grow: 1;
+    margin: 0 2rem 0 1rem;
   }
 `;
 
 export const AmountItem = styled.div`
   ${setFlex({ y: 'center', x: 'space-between' })};
   margin: 0.5rem 0;
+  width: inherit;
   @media ${media.mobile} {
     padding: 2rem 2rem 1rem 0;
-  }
+    width: -webkit-fill-available;
+    a {
+      padding: .3rem !important;
+    }
+
 
   button {
     width: 2.813em;
@@ -110,6 +123,8 @@ export const AmountItemCount = styled.span`
   font-size: 2rem;
   text-align: center;
   padding: 0 3rem;
+
+  }
 `;
 export const IncreaseButton = styled.a`
   border-radius: 100%;
@@ -153,7 +168,7 @@ export const CartFooter = styled.span`
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 700;
-  margin: 3rem 0 1rem;
+  /* margin: 3rem 0 1rem; */
 `;
 
 export const ViewBagBtn = styled(LinkBtn)`

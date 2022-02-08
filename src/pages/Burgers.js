@@ -4,7 +4,7 @@ import { DataContext } from '../context';
 import Header from '../components/Globals/Header';
 import Title from '../components/Globals/Title';
 import { GridLayout, FluidContainer, CenterContainer } from '../utils/styles';
-import menuBg from '../images/menu-bg.jpg';
+import burgerBG from '../images/burger-bg.jpg';
 
 import HeaderImg from '../components/Globals/HeroBg';
 import Footer from '../components/Footer';
@@ -28,9 +28,9 @@ class Burgers extends React.Component {
       <ThemeProvider theme={{ mode: 'light' }}>
         <GridLayout>
           <FluidContainer>
-            <HeaderImg img={menuBg}>
+            <HeaderImg img={burgerBG} size="auto">
               <CenterContainer>
-                <Header caption="Grill is Ready" />
+                <Header caption="Juicy!k" />
               </CenterContainer>
             </HeaderImg>
           </FluidContainer>
