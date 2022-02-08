@@ -2,6 +2,8 @@
 
 ## Title: Dine In
 
+demo link [DineIn](https://dinein-react-shopping-cart.netlify.app/)
+
 ### Description:
 
 I've created this project for learning purposes.
