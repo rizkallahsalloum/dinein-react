@@ -21,7 +21,7 @@ export const ShoppingCartStyled = styled.div`
   padding: 2rem 1rem;
   z-index: 100;
   figure {
-    max-height: 7em;
+    max-height: 6em;
     max-width: 7em;
     /* height: unset; */
   }
@@ -90,7 +90,7 @@ export const ShoppingCardImage = styled(CardImage)`
   img {
     padding: 1.5rem;
     position: relative;
-    max-width: 5em;
+    max-width: 6em;
     object-fit: contain;
     /* padding: 2.5rem;
     position: relative;
