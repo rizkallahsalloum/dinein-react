@@ -13,7 +13,7 @@ export const ShoppingCartStyled = styled.div`
 
   align-items: start;
   flex: 1;
-  flex-wrap: wrap;
+  flex-wrap: inherit;
   font-family: ${setFont.titleFont};
   margin: 0 0 1rem 0;
   position: relative;
@@ -21,7 +21,9 @@ export const ShoppingCartStyled = styled.div`
   padding: 2rem 1rem;
   z-index: 100;
   figure {
-    height: unset;
+    max-height: 7em;
+    max-width: 7em;
+    /* height: unset; */
   }
   @media ${media.tablet} {
     ${setFlex({ y: 'start', x: 'start' })};
@@ -86,10 +88,14 @@ export const ShoppingCardImage = styled(CardImage)`
   background: rgba(189, 188, 191, 0.1);
   border-radius: 3rem;
   img {
-    padding: 2.5rem;
+    padding: 1.5rem;
+    position: relative;
+    max-width: 5em;
+    object-fit: contain;
+    /* padding: 2.5rem;
     position: relative;
     min-width: 6em;
-    object-fit: contain;
+    object-fit: contain; */
   }
   @media ${media.mobile} {
     max-width: 8em;
@@ -101,7 +107,8 @@ export const ShoppingCardImage = styled(CardImage)`
 export const AmountItem = styled.div`
   ${setFlex({ y: 'center', x: 'space-between' })};
   margin: 0.5rem 0;
-  width: inherit;
+  width: -webkit-fill-available;
+  width: -moz-available;
   @media ${media.mobile} {
     padding: 2rem 2rem 1rem 0;
     width: -webkit-fill-available;
